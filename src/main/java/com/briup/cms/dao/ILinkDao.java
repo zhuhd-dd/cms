@@ -10,4 +10,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * @Date: 2019/11/25 17:19
  */
 public interface ILinkDao extends JpaRepository<Link,Integer> {
+    Link queryById(int id);
 }
