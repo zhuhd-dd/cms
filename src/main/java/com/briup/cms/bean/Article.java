@@ -3,6 +3,7 @@ package com.briup.cms.bean;
 import javax.persistence.*;
 import javax.xml.crypto.Data;
 import java.io.Serializable;
+import java.util.Date;
 
 @Entity
 @Table(name = "cms_article")
@@ -13,7 +14,7 @@ public class Article implements Serializable {
     private  String author;
     private  int clickTimes;
     private  String content;
-    private  Data publishData;
+    private  Date publishDate;
     private  String title;
 
     public int getId() {
@@ -48,12 +49,12 @@ public class Article implements Serializable {
         this.content = content;
     }
 
-    public Data getPublishData() {
-        return publishData;
+    public Date getPublishDate() {
+        return publishDate;
     }
 
-    public void setPublishData(Data publishData) {
-        this.publishData = publishData;
+    public void setPublishDate(Date publishDate) {
+        this.publishDate = publishDate;
     }
 
     public String getTitle() {

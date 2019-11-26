@@ -1,6 +1,6 @@
-#ÅäÖÃ·şÎñÆ÷¶Ë¿Ú
+
 server:
-  port:9997
+  port: 3232
 
 spring:
   datasource:
